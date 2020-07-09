@@ -1,12 +1,14 @@
-<h2>Signup</h2>
 
-<form action="/auth/signup" method="POST" id="form-container">
-  <label for="username">Username</label>
+
+<div class="login">
+<form class="form-signin" action="/auth/signup" method="POST" id="form-container">
+  <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
+  <label class="sr-only" for="username">Username</label>
   <input id="username" type="text" name="username" placeholder="JonSnow">
 
   <br><br>
 
-  <label for="password">Password</label>
+  <label class="sr-only" for="password">Password</label>
   <input id="password" type="password" name="password" placeholder="Your password">
   <br>
   {{#if message }}
@@ -15,10 +17,15 @@
 
   <br><br>
 
-  <button>Create account</button>
+  <button class="btn btn-lg btn-primary btn-block" >Create account</button>
 
   <p class="account-message">
     Do you already have an account?
     <a href="/auth/login">Login</a>
   </p>
+
 </form>
+</div>
+
+
+
